@@ -1,0 +1,19 @@
+# Test source and configuration
+tests/
+test/
+__tests__/
+*.test.*
+*.spec.*
+vitest.config.*
+playwright.config.*
+
+# Generated test reports and artifacts
+coverage/
+.nyc_output/
+test-results/
+playwright-report/
+screenshots/
+
+# Demo source and generated showcase build
+demo/
+demo-dist/

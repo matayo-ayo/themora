@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
+    <title>Themora — themes that transform</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <nav>
+        <a class="brand" href="#top">themora<span>✦</span></a
+        ><span id="theme-readout">system</span>
+      </nav>
+      <section id="top" class="hero">
+        <p class="eyebrow">Animated theme engine</p>
+        <h1>Themes should <em>transform.</em></h1>
+        <p class="lede">
+          Native, headless theme changes with cinematic reveals — without a
+          runtime dependency.
+        </p>
+        <div class="controls">
+          <label
+            >Theme
+            <select id="theme">
+              <option value="light">Light</option>
+              <option value="dark">Dark</option>
+              <option value="aurora">Aurora</option>
+              <option value="sunset">Sunset</option>
+            </select></label
+          >
+          <label
+            >Effect
+            <select id="effect">
+              <option value="ripple">Ripple</option>
+              <option value="fade">Fade</option>
+              <option value="wind">Wind</option>
+              <option value="waves">Waves</option>
+              <option value="noise">Analog TV static</option>
+            </select></label
+          >
+          <label
+            >Origin
+            <select id="origin">
+              <option value="cursor">Cursor</option>
+              <option value="center">Center</option>
+              <option value="trigger">Trigger</option>
+              <option value="attribute">Attribute point</option>
+            </select></label
+          >
+          <label
+            >Duration
+            <input
+              id="duration"
+              type="range"
+              min="160"
+              max="1600"
+              value="650"
+            /><output id="duration-value">650ms</output></label
+          >
+        </div>
+        <div class="actions">
+          <button id="transform" data-theme-point="launch">
+            Transform theme</button
+          ><button id="noise-reveal" class="ghost" themePoint="noise">
+            Static reveal
+          </button>
+        </div>
+      </section>
+      <section id="visit-dark" class="feature">
+        <p class="eyebrow">changeOnVisit</p>
+        <h2>This section transitions independently.</h2>
+        <p>
+          Scroll here: the page selection stays intact while this section
+          receives its own dark tokens.
+        </p>
+      </section>
+      <section id="visit-aurora" class="feature nested">
+        <p class="eyebrow">Scoped and nested</p>
+        <h2>Now an aurora section.</h2>
+        <p>
+          Its descendants inherit only this scope’s CSS variables. Scroll away
+          to restore each section.
+        </p>
+        <div class="chip">A nested scoped surface</div>
+      </section>
+      <footer>
+        Built with Themora’s actual package API ·
+        <a href="https://github.com">Source-ready</a>
+      </footer>
+    </main>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
