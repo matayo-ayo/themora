@@ -1,6 +1,5 @@
 # Themora
-
-Theme switching should feel like part of your interface, not a sudden color swap.
+_"Change with Style"_
 
 Themora adds ripple, fade, wind, wave, and analog TV static transitions to your themes. It works with React, Next.js, Vue, Angular, or plain JavaScript. It remembers the selected theme, follows the system preference, and respects reduced-motion settings.
 
